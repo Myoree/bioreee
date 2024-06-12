@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <main
+      class="w-screen min-h-screen flex justify-center pt-5"
+      style="
+        background-image: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      "
+    >
+      <div class="w-[530px] h-full bg-slate-300 p-4">
+        <h1 class="font-extrabold text-lg text-center items-center pt-5">
+          SIMPLE NOTE
+        </h1>
+        <form id="formInput" class="flex flex-col gap-4 mt-8">
+          <h2>Note :</h2>
+          <textarea id="catatan" class="min-h-36" required> </textarea>
+          <button type="submit" class="bg-blue-800 text-white py-4 rounded-lg">
+            Submit
+          </button>
+        </form>
+        <div id="notesContainer" class="mt-8 space-y-4"></div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
